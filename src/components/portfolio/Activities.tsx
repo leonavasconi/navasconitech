@@ -25,9 +25,11 @@ export function Activities() {
 
       <div className="nv-activities__container nv-container nv-grid">
         <div className="nv-activities__card">
-          <div className="nv-activities__badge">
-            <i className="uil uil-trophy"></i>
-          </div>
+          <img
+            className="nv-activities__cover nv-activities__cover--logo"
+            src="/assets/img/activities/zoho.jpg"
+            alt="Zoho Brasil"
+          />
           <h3 className="nv-activities__title">{t("activities.hackathon.title")}</h3>
           <p className="nv-activities__description">{t("activities.hackathon.description")}</p>
         </div>
@@ -37,8 +39,15 @@ export function Activities() {
             className="nv-activities__cover nv-activities__cover--video"
             onClick={() => open(UNISANTA_GALLERY, UNISANTA_GALLERY[0].src)}
           >
-            <i className="uil uil-play"></i>
-            <span>{t("activities.watchVideo")}</span>
+            <img
+              className="nv-activities__cover-logo"
+              src="/assets/img/activities/unisanta-logo.png"
+              alt="UNISANTA"
+            />
+            <span className="nv-activities__play-overlay">
+              <i className="uil uil-play"></i>
+              {t("activities.watchVideo")}
+            </span>
           </div>
           <h3 className="nv-activities__title">{t("activities.unisanta.title")}</h3>
           <p className="nv-activities__description">{t("activities.unisanta.description")}</p>
