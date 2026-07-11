@@ -51,17 +51,6 @@ export function Projects() {
       ),
     },
     {
-      key: "sea",
-      img: "/assets/img/sea.png",
-      title: "Save The Sea",
-      description: t("portfolio.sea.description"),
-      action: (
-        <span className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
-          {t("portfolio.inProgress")}
-        </span>
-      ),
-    },
-    {
       key: "presenca",
       img: "/assets/img/portfolio/unisanta-presenca.png",
       title: t("portfolio.presenca.title"),

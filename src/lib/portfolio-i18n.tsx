@@ -72,8 +72,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.lf.description":
       "Sistema corporativo com inteligência artificial para apoiar consultores na análise de conformidade documental (OEA, LGPD), desenvolvido durante minha atuação como Analista de Segurança da Informação.<br/>Ferramentas: React, Node.js, IA, PostgreSQL.",
     "portfolio.seeScreens": "Ver Telas",
-    "portfolio.sea.description":
-      "Jogo digital criado para conscientizar sobre a poluição marinha. O projeto rendeu uma bolsa de estudos integral (100%) na UNISANTA.<br/>Ferramentas: HTML, CSS, JS e C#.",
     "portfolio.inProgress": "Em andamento",
     "portfolio.presenca.title": "Sistema de Controle de Presença — UNISANTA",
     "portfolio.presenca.description":
@@ -182,8 +180,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.lf.description":
       "Corporate system powered by artificial intelligence to support consultants in document compliance analysis (OEA, LGPD), built during my role as Information Security Analyst.<br/>Tools: React, Node.js, AI, PostgreSQL.",
     "portfolio.seeScreens": "View Screens",
-    "portfolio.sea.description":
-      "Digital game created to raise awareness about marine pollution. The project earned a full (100%) scholarship at UNISANTA.<br/>Tools: HTML, CSS, JS and C#.",
     "portfolio.inProgress": "In progress",
     "portfolio.presenca.title": "Attendance Control System — UNISANTA",
     "portfolio.presenca.description":
@@ -292,8 +288,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.lf.description":
       "Sistema corporativo con inteligencia artificial para apoyar a los consultores en el análisis de cumplimiento documental (OEA, LGPD), desarrollado durante mi actuación como Analista de Seguridad de la Información.<br/>Herramientas: React, Node.js, IA, PostgreSQL.",
     "portfolio.seeScreens": "Ver Pantallas",
-    "portfolio.sea.description":
-      "Juego digital creado para concientizar sobre la contaminación marina. El proyecto obtuvo una beca integral (100%) en la UNISANTA.<br/>Herramientas: HTML, CSS, JS y C#.",
     "portfolio.inProgress": "En progreso",
     "portfolio.presenca.title": "Sistema de Control de Asistencia — UNISANTA",
     "portfolio.presenca.description":
