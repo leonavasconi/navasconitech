@@ -12,11 +12,15 @@ export function About() {
 
       <div className="nv-about__container nv-about__container--single nv-container nv-grid">
         <div className="nv-about__data">
-          <p className="nv-about__description">{t("about.description")}</p>
+          <div className="nv-about__description">
+            <p>{t("about.description1")}</p>
+            <p>{t("about.description2")}</p>
+            <p>{t("about.description3")}</p>
+          </div>
 
           <div className="nv-about__info">
             <div>
-              <span className="nv-about__info-title">3+</span>
+              <span className="nv-about__info-title">5+</span>
               <span
                 className="nv-about__info-name"
                 dangerouslySetInnerHTML={{ __html: t("about.info1Name") }}
@@ -24,7 +28,7 @@ export function About() {
             </div>
 
             <div>
-              <span className="nv-about__info-title">10+</span>
+              <span className="nv-about__info-title">30+</span>
               <span
                 className="nv-about__info-name"
                 dangerouslySetInnerHTML={{ __html: t("about.info2Name") }}

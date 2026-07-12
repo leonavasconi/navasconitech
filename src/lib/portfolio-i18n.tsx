@@ -22,8 +22,12 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "about.title": "Sobre Mim",
     "about.subtitle": "Minha introdução",
-    "about.description":
-      "Desenvolvedor Full Stack e Analista de Segurança da Informação, com experiência no desenvolvimento de aplicações web, automação corporativa, inteligência artificial e cibersegurança. Atuo também em consultoria de segurança da informação, gestão de acessos e conformidade para certificações como OEA, contribuindo para a proteção de dados e a eficiência operacional das empresas.",
+    "about.description1":
+      "Minha trajetória na tecnologia começou aos 10 anos, quando tive acesso ao meu primeiro computador e percebi que queria construir minha carreira nesse universo. Desde então, transformei essa curiosidade em experiência prática no desenvolvimento de soluções para ambientes corporativos, unindo engenharia de software, automação, inteligência artificial e segurança da informação.",
+    "about.description2":
+      "Atualmente atuo como Desenvolvedor Full Stack e Analista de Segurança da Informação, participando de todo o ciclo das soluções: levantamento de requisitos, definição de arquitetura, desenvolvimento, integração entre sistemas, implantação, segurança e evolução contínua. Minha atuação é orientada à criação de aplicações escaláveis, seguras e alinhadas aos objetivos do negócio.",
+    "about.description3":
+      "Mais do que implementar funcionalidades, busco compreender o problema em profundidade, avaliar riscos, tomar decisões técnicas e transformar necessidades complexas em soluções eficientes e sustentáveis. Trabalho com foco em qualidade, desempenho, segurança e geração de valor, assumindo responsabilidade técnica desde a concepção até a entrega em produção.",
     "about.info1Name": "Anos de<br/>experiência",
     "about.info2Name": "Projetos<br/>concluídos",
     "about.info3Name": "Empresas<br/>em que atuei",
@@ -67,9 +71,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Trabalhos recentes",
     "portfolio.arhus.description":
       "Sistema para registro e visualização de furtos e roubos através de um mapa interativo. TCC premiado com destaque regional e apoio institucional do CONSEG e da ACE.<br/>Ferramentas: HTML, CSS, PHP, JS e Google Maps API.",
-    "portfolio.arhusV2.title": "Arhus — Versão Pessoal",
-    "portfolio.arhusV2.description":
-      "Releitura solo do conceito original do Arhus: mapa colaborativo de furtos e roubos, com relato de ocorrências, filtros por tipo/período e geolocalização.<br/>Ferramentas: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "Ver Projeto",
     "portfolio.lf.title": "LF Consultoria — Análise Documental com IA",
     "portfolio.lf.description":
@@ -133,8 +134,12 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "about.title": "About Me",
     "about.subtitle": "My introduction",
-    "about.description":
-      "Full Stack Developer and Information Security Analyst, experienced in building web applications, corporate automation, artificial intelligence and cybersecurity. I also work in information security consulting, access management and compliance for certifications such as OEA, contributing to data protection and companies' operational efficiency.",
+    "about.description1":
+      "My journey in technology began at age 10, when I got access to my first computer and realized I wanted to build my career in this world. Since then, I've turned that curiosity into hands-on experience building solutions for corporate environments, combining software engineering, automation, artificial intelligence and information security.",
+    "about.description2":
+      "I currently work as a Full Stack Developer and Information Security Analyst, involved in the full lifecycle of solutions: requirements gathering, architecture design, development, system integration, deployment, security and continuous evolution. My work is driven by building applications that are scalable, secure and aligned with business goals.",
+    "about.description3":
+      "Beyond implementing features, I aim to deeply understand the problem, assess risks, make technical decisions and turn complex needs into efficient, sustainable solutions. I focus on quality, performance, security and value creation, taking technical ownership from conception all the way to production delivery.",
     "about.info1Name": "Years of<br/>experience",
     "about.info2Name": "Completed<br/>projects",
     "about.info3Name": "Companies<br/>worked at",
@@ -178,9 +183,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Most recent work",
     "portfolio.arhus.description":
       "System to report and visualize thefts and robberies through an interactive map. Award-winning senior thesis, recognized as a regional highlight with institutional support from CONSEG and ACE.<br/>Tools: HTML, CSS, PHP, JS and Google Maps API.",
-    "portfolio.arhusV2.title": "Arhus — Personal Edition",
-    "portfolio.arhusV2.description":
-      "Solo rebuild of the original Arhus concept: a collaborative theft/robbery map with occurrence reporting, type/period filters and geolocation.<br/>Tools: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "See Project",
     "portfolio.lf.title": "LF Consultoria — AI Document Analysis",
     "portfolio.lf.description":
@@ -244,8 +246,12 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "about.title": "Sobre Mí",
     "about.subtitle": "Mi introducción",
-    "about.description":
-      "Desarrollador Full Stack y Analista de Seguridad de la Información, con experiencia en el desarrollo de aplicaciones web, automatización corporativa, inteligencia artificial y ciberseguridad. También trabajo en consultoría de seguridad de la información, gestión de accesos y cumplimiento para certificaciones como OEA, contribuyendo a la protección de datos y la eficiencia operativa de las empresas.",
+    "about.description1":
+      "Mi trayectoria en la tecnología comenzó a los 10 años, cuando tuve acceso a mi primera computadora y me di cuenta de que quería construir mi carrera en este universo. Desde entonces, transformé esa curiosidad en experiencia práctica en el desarrollo de soluciones para entornos corporativos, uniendo ingeniería de software, automatización, inteligencia artificial y seguridad de la información.",
+    "about.description2":
+      "Actualmente trabajo como Desarrollador Full Stack y Analista de Seguridad de la Información, participando en todo el ciclo de las soluciones: levantamiento de requisitos, definición de arquitectura, desarrollo, integración entre sistemas, implementación, seguridad y evolución continua. Mi actuación está orientada a la creación de aplicaciones escalables, seguras y alineadas con los objetivos del negocio.",
+    "about.description3":
+      "Más que implementar funcionalidades, busco comprender el problema en profundidad, evaluar riesgos, tomar decisiones técnicas y transformar necesidades complejas en soluciones eficientes y sostenibles. Trabajo con foco en calidad, rendimiento, seguridad y generación de valor, asumiendo responsabilidad técnica desde la concepción hasta la entrega en producción.",
     "about.info1Name": "Años de<br/>experiencia",
     "about.info2Name": "Proyectos<br/>completados",
     "about.info3Name": "Empresas<br/>en las que trabajé",
@@ -289,9 +295,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Trabajos recientes",
     "portfolio.arhus.description":
       "Sistema para registrar y visualizar hurtos y robos mediante un mapa interactivo. Proyecto de fin de carrera premiado, reconocido como destacado regional con apoyo institucional de CONSEG y ACE.<br/>Herramientas: HTML, CSS, PHP, JS y Google Maps API.",
-    "portfolio.arhusV2.title": "Arhus — Versión Personal",
-    "portfolio.arhusV2.description":
-      "Nueva versión personal del concepto original de Arhus: mapa colaborativo de hurtos y robos, con registro de casos, filtros por tipo/período y geolocalización.<br/>Herramientas: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "Ver Proyecto",
     "portfolio.lf.title": "LF Consultoria — Análisis Documental con IA",
     "portfolio.lf.description":

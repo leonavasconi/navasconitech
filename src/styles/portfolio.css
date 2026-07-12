@@ -79,14 +79,23 @@
 }
 
 .nv-change-theme {
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
   color: var(--title-color);
-  margin-right: var(--mb-1);
+  border: 1px solid var(--text-color-light);
+  border-radius: .5rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: var(--mb-0-75);
   cursor: pointer;
+  transition: .3s;
 }
 
 .nv-change-theme:hover {
   color: var(--first-color);
+  border-color: var(--first-color);
 }
 
 /*========== Language switcher ==========*/
@@ -96,7 +105,7 @@
   border: 1px solid var(--text-color-light);
   border-radius: .5rem;
   overflow: hidden;
-  margin-right: var(--mb-1);
+  margin-right: var(--mb-1-5);
 }
 
 .nv-nav__lang-btn {
@@ -445,6 +454,14 @@ html {
 .nv-about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
+}
+
+.nv-about__description p {
+  margin-bottom: var(--mb-1);
+}
+
+.nv-about__description p:last-child {
+  margin-bottom: 0;
 }
 
 .nv-about__info {
@@ -1280,7 +1297,10 @@ html {
   margin-top: var(--mb-3);
 }
 
-.nv-footer__title, .nv-footer__subtitle, .nv-footer__link, .nv-footer__social {
+.nv-footer .nv-footer__title,
+.nv-footer .nv-footer__subtitle,
+.nv-footer .nv-footer__link,
+.nv-footer .nv-footer__social {
   color: #FFF;
 }
 

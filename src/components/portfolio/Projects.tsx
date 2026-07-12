@@ -5,13 +5,7 @@ import Link from "next/link";
 import { usePortfolioI18n } from "@/lib/portfolio-i18n";
 import { usePortfolioLightbox } from "@/lib/portfolio-lightbox";
 
-const LF_GALLERY = [
-  "/assets/img/lf-sistema/dashboard.png",
-  "/assets/img/lf-sistema/login.png",
-  "/assets/img/lf-sistema/chat.png",
-  "/assets/img/lf-sistema/analise.png",
-  "/assets/img/lf-sistema/resultado-analise.png",
-].map((src) => ({ src, type: "image" as const }));
+const LF_GALLERY = [{ src: "/assets/img/portfolio/analise-documentos.png", type: "image" as const }];
 
 export function Projects() {
   const { t } = usePortfolioI18n();
@@ -25,21 +19,6 @@ export function Projects() {
       title: "Arhus",
       description: t("portfolio.arhus.description"),
       action: (
-        <a
-          href="https://arhus.com.br/"
-          target="_blank"
-          className="nv-button nv-button--flex nv-button--small nv-portfolio__button"
-        >
-          {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
-        </a>
-      ),
-    },
-    {
-      key: "arhus-v2",
-      img: "/assets/img/arhus.png",
-      title: t("portfolio.arhusV2.title"),
-      description: t("portfolio.arhusV2.description"),
-      action: (
         <Link href="/arhus" className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
           {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
         </Link>
@@ -47,7 +26,7 @@ export function Projects() {
     },
     {
       key: "lf",
-      img: "/assets/img/lf-sistema/dashboard.png",
+      img: "/assets/img/portfolio/analise-documentos.png",
       imgOnClick: () => open(LF_GALLERY, LF_GALLERY[0].src),
       title: t("portfolio.lf.title"),
       description: t("portfolio.lf.description"),
@@ -63,7 +42,7 @@ export function Projects() {
     },
     {
       key: "presenca",
-      img: "/assets/img/portfolio/unisanta-presenca.png",
+      img: "/assets/img/portfolio/sistema-presenca.png",
       title: t("portfolio.presenca.title"),
       description: t("portfolio.presenca.description"),
       action: (
@@ -78,7 +57,7 @@ export function Projects() {
     },
     {
       key: "jogos",
-      img: "/assets/img/portfolio/unisanta-jogos.png",
+      img: "/assets/img/portfolio/jogos-unisanta.png",
       title: t("portfolio.jogos.title"),
       description: t("portfolio.jogos.description"),
       action: (
