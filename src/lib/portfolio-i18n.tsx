@@ -99,7 +99,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "activities.unisanta.title": "Sistemas Institucionais na UNISANTA",
     "activities.unisanta.description":
       "Desenvolvimento de dois sistemas propostos em sala de aula e aprovados pela Diretoria da UNISANTA: um Sistema de Controle de Presença e um Sistema de Acompanhamento dos Jogos Universitários.",
-    "activities.scholarship.title": "Bolsa Integral por Projeto de Inovação",
+    "activities.scholarship.title": "Bolsa Integral (100%) por Projeto de Inovação",
     "activities.scholarship.description":
       "Idealização do jogo Save the Sea, voltado à conscientização sobre poluição marinha, o que rendeu uma bolsa de estudos integral (100%) na UNISANTA para o curso de Sistemas de Informação.",
     "activities.tcc.title": "TCC de Destaque Regional",
@@ -211,7 +211,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "activities.unisanta.title": "Institutional Systems at UNISANTA",
     "activities.unisanta.description":
       "Development of two systems proposed in class and approved by UNISANTA's board: an Attendance Control System and a University Games Tracking System.",
-    "activities.scholarship.title": "Full Scholarship for Innovation Project",
+    "activities.scholarship.title": "Full (100%) Scholarship for Innovation Project",
     "activities.scholarship.description":
       "Creator of the game Save the Sea, focused on raising awareness about marine pollution, which earned a full (100%) scholarship at UNISANTA for the Information Systems program.",
     "activities.tcc.title": "Regionally Recognized Senior Thesis",
@@ -323,7 +323,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "activities.unisanta.title": "Sistemas Institucionales en la UNISANTA",
     "activities.unisanta.description":
       "Desarrollo de dos sistemas propuestos en el aula y aprobados por la Dirección de la UNISANTA: un Sistema de Control de Asistencia y un Sistema de Seguimiento de los Juegos Universitarios.",
-    "activities.scholarship.title": "Beca Integral por Proyecto de Innovación",
+    "activities.scholarship.title": "Beca Integral (100%) por Proyecto de Innovación",
     "activities.scholarship.description":
       "Creación del juego Save the Sea, enfocado en la concientización sobre la contaminación marina, lo que le valió una beca integral (100%) en la UNISANTA para la carrera de Sistemas de Información.",
     "activities.tcc.title": "Proyecto de Fin de Carrera Destacado Regional",

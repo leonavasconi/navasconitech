@@ -922,16 +922,17 @@ html {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.nv-activities__cover {
+.nv-activities__card .nv-activities__cover {
   width: 100%;
   height: 180px;
+  max-width: none;
   object-fit: cover;
   border-radius: .5rem;
   margin-bottom: var(--mb-1);
   display: block;
 }
 
-.nv-activities__cover--logo {
+.nv-activities__card .nv-activities__cover--logo {
   object-fit: contain;
   background-color: var(--input-color);
   padding: 1rem;
@@ -947,7 +948,7 @@ html {
   overflow: hidden;
 }
 
-.nv-activities__cover-logo {
+.nv-activities__cover--video .nv-activities__cover-logo {
   max-width: 60%;
   max-height: 60%;
   object-fit: contain;
@@ -979,14 +980,9 @@ html {
 .nv-activities__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
-  min-height: 2.4em;
 }
 
 .nv-activities__description {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
   font-size: var(--small-font-size);
 }
 
@@ -997,9 +993,10 @@ html {
   padding-top: var(--mb-1);
 }
 
-.nv-activities__thumb {
+.nv-activities__gallery .nv-activities__thumb {
   width: 64px;
   height: 64px;
+  max-width: none;
   object-fit: cover;
   border-radius: .35rem;
   opacity: .85;
