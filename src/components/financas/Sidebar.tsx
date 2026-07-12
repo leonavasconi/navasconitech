@@ -25,8 +25,12 @@ export function Sidebar() {
 
   return (
     <nav className="flex h-full w-60 flex-col border-r border-slate-200 bg-white px-3 py-6">
-      <Link href="/financas/dashboard" className="mb-8 px-3 text-lg font-semibold text-slate-900">
-        Finanças<span className="text-indigo-600">.</span>
+      <Link href="/financas/dashboard" className="mb-8 block px-3">
+        <img
+          src="/assets/img/monetix-logo.png"
+          alt="Monetix"
+          className="aspect-[2/1] w-full object-cover object-top"
+        />
       </Link>
 
       <ul className="space-y-1">
@@ -37,7 +41,7 @@ export function Sidebar() {
               <Link
                 href={href}
                 className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition ${
-                  active ? "bg-indigo-50 text-indigo-700" : "text-slate-600 hover:bg-slate-100"
+                  active ? "bg-emerald-50 text-emerald-700" : "text-slate-600 hover:bg-slate-100"
                 }`}
               >
                 <Icon size={18} />

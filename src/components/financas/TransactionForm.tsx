@@ -64,7 +64,7 @@ export function TransactionForm({
       const category = await createCategory({
         name: newCategoryName.trim(),
         kind: type,
-        color: "#6366f1",
+        color: "#059669",
       });
       setLocalCategories((prev) => [...prev, category as Category]);
       setValue("categoryId", category.id);
@@ -140,7 +140,7 @@ export function TransactionForm({
             value={newCategoryName}
             onChange={(e) => setNewCategoryName(e.target.value)}
             placeholder="Nova categoria..."
-            className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40"
+            className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/40"
           />
           <Button type="button" variant="secondary" disabled={creatingCategory} onClick={handleCreateCategory}>
             + Criar

@@ -85,7 +85,7 @@ export default async function DashboardPage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-6">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-semibold text-slate-900">Orçamento do mês</h2>
-            <Link href="/financas/budgets" className="text-sm font-medium text-indigo-600 hover:underline">
+            <Link href="/financas/budgets" className="text-sm font-medium text-emerald-600 hover:underline">
               Gerenciar
             </Link>
           </div>
@@ -104,7 +104,7 @@ export default async function DashboardPage() {
                   </div>
                   <div className="h-2 rounded-full bg-slate-100">
                     <div
-                      className={`h-2 rounded-full ${b.percent >= 100 ? "bg-red-500" : "bg-indigo-500"}`}
+                      className={`h-2 rounded-full ${b.percent >= 100 ? "bg-red-500" : "bg-emerald-500"}`}
                       style={{ width: `${b.percent}%` }}
                     />
                   </div>
@@ -119,7 +119,7 @@ export default async function DashboardPage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-6">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-semibold text-slate-900">Últimos lançamentos</h2>
-            <Link href="/financas/transactions" className="text-sm font-medium text-indigo-600 hover:underline">
+            <Link href="/financas/transactions" className="text-sm font-medium text-emerald-600 hover:underline">
               Ver todos
             </Link>
           </div>
@@ -149,7 +149,7 @@ export default async function DashboardPage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-6">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-semibold text-slate-900">Próximas contas recorrentes</h2>
-            <Link href="/financas/recurring" className="text-sm font-medium text-indigo-600 hover:underline">
+            <Link href="/financas/recurring" className="text-sm font-medium text-emerald-600 hover:underline">
               Gerenciar
             </Link>
           </div>

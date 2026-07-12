@@ -50,7 +50,7 @@ export default async function TransactionsPage({
             key={f.value}
             href={f.value === "all" ? "/financas/transactions" : `/financas/transactions?type=${f.value}`}
             className={`rounded-full px-4 py-1.5 text-sm font-medium ${
-              activeFilter === f.value ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-600"
+              activeFilter === f.value ? "bg-emerald-600 text-white" : "bg-slate-100 text-slate-600"
             }`}
           >
             {f.label}

@@ -3,6 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Shared brand accent for the ui/ and auth/ components. Apps that
+     want their own identity (e.g. /financas -> Monetix) override
+     these on a wrapper element instead of forking the components. */
+  --brand-50: #eef2ff;
+  --brand-100: #e0e7ff;
+  --brand-300: #a5b4fc;
+  --brand-400: #818cf8;
+  --brand-500: #6366f1;
+  --brand-600: #4f46e5;
+  --brand-700: #4338ca;
 }
 
 @theme inline {

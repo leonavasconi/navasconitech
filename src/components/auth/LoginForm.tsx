@@ -64,7 +64,7 @@ export function LoginForm({ redirectTo, signupHref }: { redirectTo: string; sign
 
       <p className="text-center text-sm text-slate-500">
         Não tem uma conta?{" "}
-        <Link href={signupHref} className="font-medium text-indigo-600 hover:underline">
+        <Link href={signupHref} className="font-medium text-[var(--brand-600)] hover:underline">
           Criar conta
         </Link>
       </p>

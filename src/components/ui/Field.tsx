@@ -26,8 +26,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
     <FieldWrapper label={label} error={error}>
       <input
         ref={ref}
-        className={`w-full rounded-lg border px-3 py-2 text-sm outline-none transition focus:ring-2 focus:ring-indigo-500/40 ${
-          error ? "border-red-400" : "border-slate-300 focus:border-indigo-500"
+        className={`w-full rounded-lg border px-3 py-2 text-sm outline-none transition focus:ring-2 focus:ring-[var(--brand-500)]/40 ${
+          error ? "border-red-400" : "border-slate-300 focus:border-[var(--brand-500)]"
         } ${className}`}
         {...props}
       />
@@ -49,8 +49,8 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
     <FieldWrapper label={label} error={error}>
       <select
         ref={ref}
-        className={`w-full rounded-lg border bg-white px-3 py-2 text-sm outline-none transition focus:ring-2 focus:ring-indigo-500/40 ${
-          error ? "border-red-400" : "border-slate-300 focus:border-indigo-500"
+        className={`w-full rounded-lg border bg-white px-3 py-2 text-sm outline-none transition focus:ring-2 focus:ring-[var(--brand-500)]/40 ${
+          error ? "border-red-400" : "border-slate-300 focus:border-[var(--brand-500)]"
         } ${className}`}
         {...props}
       >

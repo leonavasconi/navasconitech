@@ -14,7 +14,7 @@ export function NewCategoryInline() {
     if (!name.trim()) return;
     setPending(true);
     try {
-      await createCategory({ name: name.trim(), kind: "expense", color: "#6366f1" });
+      await createCategory({ name: name.trim(), kind: "expense", color: "#059669" });
       setName("");
       router.refresh();
     } finally {
@@ -29,7 +29,7 @@ export function NewCategoryInline() {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Nova categoria de despesa..."
-        className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40"
+        className="flex-1 rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/40"
       />
       <Button type="button" variant="secondary" disabled={pending} onClick={submit}>
         + Criar

@@ -38,7 +38,7 @@ export function AccountForm({ onClose }: { onClose: () => void }) {
     formState: { errors, isSubmitting },
   } = useForm<FormInput, unknown, FormValues>({
     resolver: zodResolver(schema),
-    defaultValues: { type: "checking", color: "#6366f1", initialBalance: 0 },
+    defaultValues: { type: "checking", color: "#059669", initialBalance: 0 },
   });
 
   const onSubmit = async (values: FormValues) => {

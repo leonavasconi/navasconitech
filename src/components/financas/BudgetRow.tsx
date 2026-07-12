@@ -33,7 +33,7 @@ export function BudgetRow({
           step="0.01"
           value={amount}
           onChange={(e) => setAmount(Number(e.target.value))}
-          className="w-28 rounded-lg border border-slate-300 px-2 py-1 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40"
+          className="w-28 rounded-lg border border-slate-300 px-2 py-1 text-sm outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/40"
         />
         <Button
           variant="secondary"
