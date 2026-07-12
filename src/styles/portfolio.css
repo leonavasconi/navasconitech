@@ -100,24 +100,36 @@
 }
 
 .nv-nav__lang-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: var(--font-medium);
-  padding: .25rem .5rem;
+  padding: .4rem .5rem;
   cursor: pointer;
+  opacity: .5;
+  filter: grayscale(70%);
   transition: .3s;
 }
 
 .nv-nav__lang-btn:hover {
-  color: var(--first-color);
+  opacity: .8;
+  filter: grayscale(0%);
 }
 
 .nv-nav__lang-btn.nv-active-lang {
-  background-color: var(--first-color);
-  color: #FFF;
+  background-color: var(--first-color-lighter);
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.nv-nav__lang .nv-nav__lang-flag {
+  width: 22px;
+  height: 16px;
+  max-width: none;
+  object-fit: cover;
+  border-radius: .15rem;
+  display: block;
 }
 
 /*==================== BASE ====================*/

@@ -6,6 +6,18 @@ import { usePortfolioTheme } from "@/lib/portfolio-theme";
 
 const SECTIONS = ["home", "about", "skills", "portfolio", "activities", "contact"];
 
+const LANG_FLAGS: Record<Lang, string> = {
+  pt: "br",
+  en: "us",
+  es: "es",
+};
+
+const LANG_NAMES: Record<Lang, string> = {
+  pt: "Português",
+  en: "English",
+  es: "Español",
+};
+
 export function Header() {
   const { t, lang, setLang } = usePortfolioI18n();
   const { theme, toggle } = usePortfolioTheme();
@@ -74,8 +86,14 @@ export function Header() {
                 type="button"
                 className={`nv-nav__lang-btn${lang === code ? " nv-active-lang" : ""}`}
                 onClick={() => setLang(code)}
+                aria-label={LANG_NAMES[code]}
+                title={LANG_NAMES[code]}
               >
-                {code.toUpperCase()}
+                <img
+                  src={`https://flagcdn.com/w40/${LANG_FLAGS[code]}.png`}
+                  alt={LANG_NAMES[code]}
+                  className="nv-nav__lang-flag"
+                />
               </button>
             ))}
           </div>
