@@ -1,5 +1,5 @@
-import { SignupForm } from "@/components/financas/SignupForm";
+import { SignupForm } from "@/components/auth/SignupForm";
 
 export default function SignupPage() {
-  return <SignupForm />;
+  return <SignupForm redirectTo="/financas/dashboard" loginHref="/financas/login" />;
 }

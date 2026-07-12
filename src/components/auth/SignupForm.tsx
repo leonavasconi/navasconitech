@@ -24,7 +24,7 @@ const schema = z
 
 type FormValues = z.infer<typeof schema>;
 
-export function SignupForm() {
+export function SignupForm({ redirectTo, loginHref }: { redirectTo: string; loginHref: string }) {
   const router = useRouter();
   const [serverError, setServerError] = useState<string | null>(null);
   const [confirmationSent, setConfirmationSent] = useState(false);
@@ -49,7 +49,7 @@ export function SignupForm() {
     }
 
     if (data.session) {
-      router.push("/financas/dashboard");
+      router.push(redirectTo);
       router.refresh();
       return;
     }
@@ -92,7 +92,7 @@ export function SignupForm() {
 
       <p className="text-center text-sm text-slate-500">
         Já tem uma conta?{" "}
-        <Link href="/financas/login" className="font-medium text-indigo-600 hover:underline">
+        <Link href={loginHref} className="font-medium text-indigo-600 hover:underline">
           Entrar
         </Link>
       </p>

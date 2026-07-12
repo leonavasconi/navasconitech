@@ -67,6 +67,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Trabalhos recentes",
     "portfolio.arhus.description":
       "Sistema para registro e visualização de furtos e roubos através de um mapa interativo. TCC premiado com destaque regional e apoio institucional do CONSEG e da ACE.<br/>Ferramentas: HTML, CSS, PHP, JS e Google Maps API.",
+    "portfolio.arhusV2.title": "Arhus — Versão Pessoal",
+    "portfolio.arhusV2.description":
+      "Releitura solo do conceito original do Arhus: mapa colaborativo de furtos e roubos, com relato de ocorrências, filtros por tipo/período e geolocalização.<br/>Ferramentas: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "Ver Projeto",
     "portfolio.lf.title": "LF Consultoria — Análise Documental com IA",
     "portfolio.lf.description":
@@ -175,6 +178,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Most recent work",
     "portfolio.arhus.description":
       "System to report and visualize thefts and robberies through an interactive map. Award-winning senior thesis, recognized as a regional highlight with institutional support from CONSEG and ACE.<br/>Tools: HTML, CSS, PHP, JS and Google Maps API.",
+    "portfolio.arhusV2.title": "Arhus — Personal Edition",
+    "portfolio.arhusV2.description":
+      "Solo rebuild of the original Arhus concept: a collaborative theft/robbery map with occurrence reporting, type/period filters and geolocation.<br/>Tools: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "See Project",
     "portfolio.lf.title": "LF Consultoria — AI Document Analysis",
     "portfolio.lf.description":
@@ -283,6 +289,9 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.subtitle": "Trabajos recientes",
     "portfolio.arhus.description":
       "Sistema para registrar y visualizar hurtos y robos mediante un mapa interactivo. Proyecto de fin de carrera premiado, reconocido como destacado regional con apoyo institucional de CONSEG y ACE.<br/>Herramientas: HTML, CSS, PHP, JS y Google Maps API.",
+    "portfolio.arhusV2.title": "Arhus — Versión Personal",
+    "portfolio.arhusV2.description":
+      "Nueva versión personal del concepto original de Arhus: mapa colaborativo de hurtos y robos, con registro de casos, filtros por tipo/período y geolocalización.<br/>Herramientas: Next.js, Supabase, Leaflet.",
     "portfolio.seeProject": "Ver Proyecto",
     "portfolio.lf.title": "LF Consultoria — Análisis Documental con IA",
     "portfolio.lf.description":

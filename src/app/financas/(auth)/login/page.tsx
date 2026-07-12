@@ -1,5 +1,10 @@
-import { LoginForm } from "@/components/financas/LoginForm";
+import { Suspense } from "react";
+import { LoginForm } from "@/components/auth/LoginForm";
 
 export default function LoginPage() {
-  return <LoginForm />;
+  return (
+    <Suspense>
+      <LoginForm redirectTo="/financas/dashboard" signupHref="/financas/signup" />
+    </Suspense>
+  );
 }

@@ -35,6 +35,17 @@ export function Projects() {
       ),
     },
     {
+      key: "arhus-v2",
+      img: "/assets/img/arhus.png",
+      title: t("portfolio.arhusV2.title"),
+      description: t("portfolio.arhusV2.description"),
+      action: (
+        <Link href="/arhus" className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
+          {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
+        </Link>
+      ),
+    },
+    {
       key: "lf",
       img: "/assets/img/lf-sistema/dashboard.png",
       imgOnClick: () => open(LF_GALLERY, LF_GALLERY[0].src),

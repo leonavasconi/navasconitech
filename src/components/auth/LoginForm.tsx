@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -17,8 +17,9 @@ const schema = z.object({
 
 type FormValues = z.infer<typeof schema>;
 
-export function LoginForm() {
+export function LoginForm({ redirectTo, signupHref }: { redirectTo: string; signupHref: string }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [serverError, setServerError] = useState<string | null>(null);
   const {
     register,
@@ -40,7 +41,7 @@ export function LoginForm() {
       return;
     }
 
-    router.push("/financas/dashboard");
+    router.push(searchParams.get("redirect") || redirectTo);
     router.refresh();
   };
 
@@ -63,7 +64,7 @@ export function LoginForm() {
 
       <p className="text-center text-sm text-slate-500">
         Não tem uma conta?{" "}
-        <Link href="/financas/signup" className="font-medium text-indigo-600 hover:underline">
+        <Link href={signupHref} className="font-medium text-indigo-600 hover:underline">
           Criar conta
         </Link>
       </p>

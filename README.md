@@ -4,6 +4,7 @@ Site único em Next.js que serve:
 
 - **`/`** — Portfólio (currículo, habilidades, atividades complementares, idiomas PT/EN/ES)
 - **`/financas`** — Aplicativo de Finanças Pessoais (contas, lançamentos, orçamento, metas, recorrências)
+- **`/arhus`** — Mapa colaborativo de furtos e roubos (releitura pessoal do TCC original), mapa público + relato de ocorrências
 - **`/marketplace`** — Marketplace multi-vendedor (em construção)
 
 Todos compartilham o mesmo projeto Supabase (banco de dados + autenticação) e o mesmo deploy na Vercel.
@@ -30,6 +31,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=sua-anon-key
 2. No **SQL Editor**, rode nesta ordem os arquivos em `supabase/migrations/`:
    - `0001_init.sql` — cria as tabelas do Finanças Pessoais (contas, categorias, lançamentos, orçamento, metas, recorrências) com RLS habilitado
    - `0002_default_categories.sql` — cria automaticamente categorias padrão para cada novo usuário
+   - `0003_arhus.sql` — cria a tabela de ocorrências do Arhus (leitura pública, escrita só do autor) e o bucket de fotos no Storage
 3. Em **Settings → API**, copie a **Project URL** e a **anon public key** para o `.env.local`
 4. Em **Authentication → Sign In / Providers → Email**, deixe **"Confirm email"** ativado em produção (ele fica desativado apenas durante testes locais rápidos)
 
@@ -45,4 +47,5 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=sua-anon-key
 
 - **Portfólio** (`src/app/page.tsx` + `src/components/portfolio/*`): usa CSS próprio (`src/styles/portfolio.css`), com todas as classes prefixadas com `nv-` para nunca colidir com as classes utilitárias do Tailwind usadas em `/financas` e `/marketplace`.
 - **Finanças Pessoais** (`src/app/financas/*`): Tailwind CSS, Server Components para leitura de dados e Server Actions para escrita, Supabase Auth + Postgres com Row Level Security (cada usuário só enxerga os próprios dados).
-- **Proteção de rotas** (`src/proxy.ts`): no Next.js 16 o antigo `middleware.ts` foi renomeado para `proxy.ts`. Ele protege apenas `/financas/*` e `/marketplace/*` — o portfólio continua público.
+- **Arhus** (`src/app/arhus/*`): mapa (Leaflet + OpenStreetMap, sem chave de API) com leitura pública via RLS — qualquer visitante vê as ocorrências, mas só um usuário autenticado pode reportar. Uma mesma conta funciona em `/financas` e `/arhus`, já que os dois usam o mesmo projeto Supabase.
+- **Proteção de rotas** (`src/proxy.ts`): no Next.js 16 o antigo `middleware.ts` foi renomeado para `proxy.ts`. Protege `/financas/*` e `/marketplace/*` inteiros, e apenas as páginas `/arhus/nova` e `/arhus/minhas-ocorrencias` — o mapa em `/arhus` continua público.

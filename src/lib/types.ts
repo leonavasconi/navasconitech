@@ -105,3 +105,18 @@ export interface GoalContribution {
   occurred_on: string;
   created_at: string;
 }
+
+export type OccurrenceType = "furto" | "roubo" | "outro";
+
+export interface Occurrence {
+  id: string;
+  user_id: string;
+  type: OccurrenceType;
+  description: string;
+  latitude: number;
+  longitude: number;
+  address: string | null;
+  occurred_at: string;
+  photo_url: string | null;
+  created_at: string;
+}

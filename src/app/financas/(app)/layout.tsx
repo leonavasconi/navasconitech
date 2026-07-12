@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { Sidebar } from "@/components/financas/Sidebar";
-import { SignOutButton } from "@/components/financas/SignOutButton";
+import { SignOutButton } from "@/components/ui/SignOutButton";
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
@@ -28,7 +28,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             <p className="text-sm text-slate-500">Bem-vindo de volta</p>
             <p className="font-medium text-slate-900">{fullName || user?.email}</p>
           </div>
-          <SignOutButton />
+          <SignOutButton redirectTo="/financas/login" />
         </header>
 
         <main className="p-8">{children}</main>
