@@ -79,11 +79,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.inProgress": "Em andamento",
     "portfolio.presenca.title": "Sistema de Controle de Presença — UNISANTA",
     "portfolio.presenca.description":
-      "Sistema institucional para registro de presença de alunos em eventos da UNISANTA, aprovado pela Diretoria da universidade.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
+      "Sistema institucional para registro de presença de alunos em eventos da UNISANTA, com biometria facial e geolocalização para validar identidade e localização em tempo real. Aprovado e implementado pela Diretoria da universidade.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
     "portfolio.jogos.title": "Jogos Universitários — UNISANTA",
     "portfolio.jogos.description":
-      "Plataforma de acompanhamento dos Jogos Universitários da UNISANTA: agenda de partidas, classificação, destaques e estatísticas.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Finanças Pessoais",
+      "Plataforma de acompanhamento dos Jogos Universitários da UNISANTA, aprovada e implementada pela Diretoria da universidade: agenda de partidas, acompanhamento ao vivo, classificação, destaques e estatísticas.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
+    "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Aplicativo completo de finanças pessoais: contas e cartões, lançamentos, orçamento mensal por categoria, contas recorrentes e metas de economia.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Marketplace",
@@ -191,11 +191,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.inProgress": "In progress",
     "portfolio.presenca.title": "Attendance Control System — UNISANTA",
     "portfolio.presenca.description":
-      "Institutional system to register student attendance at UNISANTA events, approved by the university's board.<br/>Tools: Next.js, Supabase, TypeScript.",
+      "Institutional system to register student attendance at UNISANTA events, using facial biometrics and geolocation to validate identity and location in real time. Approved and implemented by the university's board.<br/>Tools: Next.js, Supabase, TypeScript.",
     "portfolio.jogos.title": "University Games — UNISANTA",
     "portfolio.jogos.description":
-      "Tracking platform for UNISANTA's University Games: match schedule, standings, highlights and stats.<br/>Tools: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Personal Finance",
+      "Tracking platform for UNISANTA's University Games, approved and implemented by the university's board: match schedule, live tracking, standings, highlights and stats.<br/>Tools: Next.js, Supabase, TypeScript.",
+    "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Complete personal finance app: accounts and cards, transactions, monthly budget per category, recurring bills and savings goals.<br/>Tools: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Marketplace",
@@ -303,11 +303,11 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.inProgress": "En progreso",
     "portfolio.presenca.title": "Sistema de Control de Asistencia — UNISANTA",
     "portfolio.presenca.description":
-      "Sistema institucional para registrar la asistencia de los alumnos en eventos de la UNISANTA, aprobado por la Dirección de la universidad.<br/>Herramientas: Next.js, Supabase, TypeScript.",
+      "Sistema institucional para registrar la asistencia de los alumnos en eventos de la UNISANTA, con biometría facial y geolocalización para validar la identidad y ubicación en tiempo real. Aprobado e implementado por la Dirección de la universidad.<br/>Herramientas: Next.js, Supabase, TypeScript.",
     "portfolio.jogos.title": "Juegos Universitarios — UNISANTA",
     "portfolio.jogos.description":
-      "Plataforma de seguimiento de los Juegos Universitarios de la UNISANTA: calendario de partidos, clasificación, destacados y estadísticas.<br/>Herramientas: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Finanzas Personales",
+      "Plataforma de seguimiento de los Juegos Universitarios de la UNISANTA, aprobada e implementada por la Dirección de la universidad: calendario de partidos, seguimiento en vivo, clasificación, destacados y estadísticas.<br/>Herramientas: Next.js, Supabase, TypeScript.",
+    "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Aplicación completa de finanzas personales: cuentas y tarjetas, movimientos, presupuesto mensual por categoría, gastos recurrentes y metas de ahorro.<br/>Herramientas: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Marketplace",
