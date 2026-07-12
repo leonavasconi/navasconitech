@@ -128,7 +128,9 @@ function SkillAccordion({
 
 export function Skills() {
   const { t } = usePortfolioI18n();
-  const [openKey, setOpenKey] = useState("skills.backend.title");
+  const [openKey, setOpenKey] = useState<string | null>("skills.backend.title");
+
+  const toggle = (key: string) => setOpenKey((current) => (current === key ? null : key));
 
   return (
     <section className="nv-skills nv-section" id="skills">
@@ -142,7 +144,7 @@ export function Skills() {
               key={category.titleKey}
               category={category}
               isOpen={openKey === category.titleKey}
-              onToggle={() => setOpenKey(category.titleKey)}
+              onToggle={() => toggle(category.titleKey)}
             />
           ))}
         </div>
@@ -153,7 +155,7 @@ export function Skills() {
               key={category.titleKey}
               category={category}
               isOpen={openKey === category.titleKey}
-              onToggle={() => setOpenKey(category.titleKey)}
+              onToggle={() => toggle(category.titleKey)}
             />
           ))}
         </div>

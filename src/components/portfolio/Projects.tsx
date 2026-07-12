@@ -5,7 +5,13 @@ import Link from "next/link";
 import { usePortfolioI18n } from "@/lib/portfolio-i18n";
 import { usePortfolioLightbox } from "@/lib/portfolio-lightbox";
 
-const LF_GALLERY = [{ src: "/assets/img/portfolio/analise-documentos.png", type: "image" as const }];
+const LF_GALLERY = [
+  "/assets/img/lf-sistema/login.png",
+  "/assets/img/lf-sistema/dashboard.png",
+  "/assets/img/lf-sistema/chat.png",
+  "/assets/img/lf-sistema/analise.png",
+  "/assets/img/lf-sistema/resultado-analise.png",
+].map((src) => ({ src, type: "image" as const }));
 
 export function Projects() {
   const { t } = usePortfolioI18n();
@@ -19,7 +25,11 @@ export function Projects() {
       title: "Arhus",
       description: t("portfolio.arhus.description"),
       action: (
-        <Link href="/arhus" className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
+        <Link
+          href="/arhus"
+          target="_blank"
+          className="nv-button nv-button--flex nv-button--small nv-portfolio__button"
+        >
           {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
         </Link>
       ),
@@ -76,7 +86,11 @@ export function Projects() {
       title: t("portfolio.financas.title"),
       description: t("portfolio.financas.description"),
       action: (
-        <Link href="/financas" className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
+        <Link
+          href="/financas"
+          target="_blank"
+          className="nv-button nv-button--flex nv-button--small nv-portfolio__button"
+        >
           {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
         </Link>
       ),
