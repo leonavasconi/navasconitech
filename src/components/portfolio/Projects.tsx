@@ -82,7 +82,7 @@ export function Projects() {
     },
     {
       key: "financas",
-      img: "/assets/img/portfolio/financas.png",
+      img: "/assets/img/portfolio/monetix.png",
       title: t("portfolio.financas.title"),
       description: t("portfolio.financas.description"),
       action: (

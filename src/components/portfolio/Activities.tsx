@@ -25,11 +25,7 @@ export function Activities() {
 
       <div className="nv-activities__container nv-container nv-grid">
         <div className="nv-activities__card">
-          <img
-            className="nv-activities__cover nv-activities__cover--logo"
-            src="/assets/img/activities/zoho.jpg"
-            alt="Zoho Brasil"
-          />
+          <img className="nv-activities__cover" src="/assets/img/activities/zoho.jpg" alt="Zoho Brasil" />
           <h3 className="nv-activities__title">{t("activities.hackathon.title")}</h3>
           <p className="nv-activities__description">{t("activities.hackathon.description")}</p>
         </div>

@@ -101,8 +101,8 @@ const translations: Record<Lang, Record<string, string>> = {
       "Desenvolvimento de dois sistemas propostos em sala de aula e aprovados pela Diretoria da UNISANTA: um Sistema de Controle de Presença e um Sistema de Acompanhamento dos Jogos Universitários.",
     "activities.scholarship.title": "Bolsa Integral (100%) por Projeto de Inovação",
     "activities.scholarship.description":
-      "Idealização do jogo Save the Sea, voltado à conscientização sobre poluição marinha, o que rendeu uma bolsa de estudos integral (100%) na UNISANTA para o curso de Sistemas de Informação.",
-    "activities.tcc.title": "TCC de Destaque Regional",
+      "Desenvolvimento do jogo Save the Sea, voltado à conscientização sobre poluição marinha, o que rendeu uma bolsa de estudos integral (100%) na UNISANTA para o curso de Sistemas de Informação.",
+    "activities.tcc.title": "TCC de Destaque Regional em Segurança Pública",
     "activities.tcc.description":
       "Liderança no TCC reconhecido como destaque na Baixada Santista: uma plataforma web para monitoramento de furtos e roubos, com apoio institucional e patrocínio do CONSEG e da ACE.",
 
@@ -213,8 +213,8 @@ const translations: Record<Lang, Record<string, string>> = {
       "Development of two systems proposed in class and approved by UNISANTA's board: an Attendance Control System and a University Games Tracking System.",
     "activities.scholarship.title": "Full (100%) Scholarship for Innovation Project",
     "activities.scholarship.description":
-      "Creator of the game Save the Sea, focused on raising awareness about marine pollution, which earned a full (100%) scholarship at UNISANTA for the Information Systems program.",
-    "activities.tcc.title": "Regionally Recognized Senior Thesis",
+      "Development of the game Save the Sea, focused on raising awareness about marine pollution, which earned a full (100%) scholarship at UNISANTA for the Information Systems program.",
+    "activities.tcc.title": "Regionally Recognized Senior Thesis in Public Security",
     "activities.tcc.description":
       "Led the senior thesis recognized as a highlight in the Baixada Santista region: a web platform for monitoring thefts and robberies, with institutional support and sponsorship from CONSEG and ACE.",
 
@@ -325,8 +325,8 @@ const translations: Record<Lang, Record<string, string>> = {
       "Desarrollo de dos sistemas propuestos en el aula y aprobados por la Dirección de la UNISANTA: un Sistema de Control de Asistencia y un Sistema de Seguimiento de los Juegos Universitarios.",
     "activities.scholarship.title": "Beca Integral (100%) por Proyecto de Innovación",
     "activities.scholarship.description":
-      "Creación del juego Save the Sea, enfocado en la concientización sobre la contaminación marina, lo que le valió una beca integral (100%) en la UNISANTA para la carrera de Sistemas de Información.",
-    "activities.tcc.title": "Proyecto de Fin de Carrera Destacado Regional",
+      "Desarrollo del juego Save the Sea, enfocado en la concientización sobre la contaminación marina, lo que le valió una beca integral (100%) en la UNISANTA para la carrera de Sistemas de Información.",
+    "activities.tcc.title": "Proyecto de Fin de Carrera Destacado Regional en Seguridad Pública",
     "activities.tcc.description":
       "Liderazgo en el proyecto de fin de carrera reconocido como destacado en la Baixada Santista: una plataforma web para el monitoreo de hurtos y robos, con apoyo institucional y patrocinio de CONSEG y ACE.",
 

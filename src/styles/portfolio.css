@@ -932,26 +932,19 @@ html {
   display: block;
 }
 
-.nv-activities__card .nv-activities__cover--logo {
-  object-fit: contain;
-  background-color: var(--input-color);
-  padding: 1rem;
-}
-
 .nv-activities__cover--video {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--input-color);
   cursor: pointer;
   overflow: hidden;
 }
 
 .nv-activities__cover--video .nv-activities__cover-logo {
-  max-width: 60%;
-  max-height: 60%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nv-activities__play-overlay {
