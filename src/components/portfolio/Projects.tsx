@@ -97,13 +97,17 @@ export function Projects() {
     },
     {
       key: "marketplace",
-      placeholderIcon: "uil-shopping-bag",
+      img: "/assets/img/portfolio/vitrine.png",
       title: t("portfolio.marketplace.title"),
       description: t("portfolio.marketplace.description"),
       action: (
-        <span className="nv-button nv-button--flex nv-button--small nv-portfolio__button">
-          {t("portfolio.inProgress")}
-        </span>
+        <Link
+          href="/marketplace"
+          target="_blank"
+          className="nv-button nv-button--flex nv-button--small nv-portfolio__button"
+        >
+          {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
+        </Link>
       ),
     },
   ];
@@ -121,19 +125,13 @@ export function Projects() {
             const slide = slides[active];
             return (
               <>
-                {slide.img ? (
-                  <img
-                    src={slide.img}
-                    alt={slide.title}
-                    className="nv-portfolio__img"
-                    onClick={slide.imgOnClick}
-                    style={slide.imgOnClick ? { cursor: "pointer" } : undefined}
-                  />
-                ) : (
-                  <div className="nv-portfolio__img nv-portfolio__img--placeholder">
-                    <i className={`uil ${slide.placeholderIcon}`}></i>
-                  </div>
-                )}
+                <img
+                  src={slide.img}
+                  alt={slide.title}
+                  className="nv-portfolio__img"
+                  onClick={slide.imgOnClick}
+                  style={slide.imgOnClick ? { cursor: "pointer" } : undefined}
+                />
 
                 <div className="nv-portfolio__data">
                   <h3 className="nv-portfolio__title">{slide.title}</h3>

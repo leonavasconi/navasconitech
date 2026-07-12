@@ -1,8 +1,27 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { guardApp, guardPage } from "@/lib/supabase/proxy";
 
-const FULL_APP_PREFIXES = ["/financas", "/marketplace"];
-const ARHUS_PROTECTED_PAGES = ["/arhus/nova", "/arhus/minhas-ocorrencias"];
+// Apps that are fully private (every page needs a session except their own
+// /login and /signup, handled by guardApp).
+const FULL_APP_PREFIXES = ["/financas"];
+
+// Apps that are mostly public, with only specific pages gated behind auth.
+const PARTIALLY_PROTECTED: { loginPath: string; pages: string[] }[] = [
+  {
+    loginPath: "/arhus/login",
+    pages: ["/arhus/nova", "/arhus/minhas-ocorrencias"],
+  },
+  {
+    loginPath: "/marketplace/login",
+    pages: [
+      "/marketplace/carrinho",
+      "/marketplace/checkout",
+      "/marketplace/meus-pedidos",
+      "/marketplace/vender",
+      "/marketplace/painel",
+    ],
+  },
+];
 
 export async function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
@@ -14,8 +33,10 @@ export async function proxy(request: NextRequest) {
     return guardApp(request, appPrefix);
   }
 
-  if (ARHUS_PROTECTED_PAGES.some((page) => path === page || path.startsWith(`${page}/`))) {
-    return guardPage(request, "/arhus/login");
+  for (const { loginPath, pages } of PARTIALLY_PROTECTED) {
+    if (pages.some((page) => path === page || path.startsWith(`${page}/`))) {
+      return guardPage(request, loginPath);
+    }
   }
 
   return NextResponse.next();
@@ -24,8 +45,17 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     "/financas/:path*",
-    "/marketplace/:path*",
     "/arhus/nova",
     "/arhus/minhas-ocorrencias",
+    "/marketplace/carrinho",
+    "/marketplace/carrinho/:path*",
+    "/marketplace/checkout",
+    "/marketplace/checkout/:path*",
+    "/marketplace/meus-pedidos",
+    "/marketplace/meus-pedidos/:path*",
+    "/marketplace/vender",
+    "/marketplace/vender/:path*",
+    "/marketplace/painel",
+    "/marketplace/painel/:path*",
   ],
 };

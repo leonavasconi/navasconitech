@@ -828,18 +828,6 @@ html {
   justify-self: center;
 }
 
-.nv-portfolio__img--placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--first-color), var(--first-color-alt));
-}
-
-.nv-portfolio__img--placeholder i {
-  font-size: 4rem;
-  color: #FFF;
-}
-
 .nv-portfolio__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);

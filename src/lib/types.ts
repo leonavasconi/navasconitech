@@ -120,3 +120,111 @@ export interface Occurrence {
   photo_url: string | null;
   created_at: string;
 }
+
+export type SellerStatus = "pending" | "approved" | "suspended";
+export type ProductStatus = "draft" | "active" | "inactive";
+export type OrderStatus = "pending_payment" | "paid" | "shipped" | "delivered" | "cancelled";
+export type PaymentProvider = "mercado_pago" | "stripe" | "pix";
+export type DiscountType = "percent" | "fixed";
+
+export interface Seller {
+  id: string;
+  user_id: string;
+  store_name: string;
+  slug: string;
+  description: string | null;
+  logo_url: string | null;
+  status: SellerStatus;
+  created_at: string;
+}
+
+export interface MarketplaceCategory {
+  id: string;
+  name: string;
+  slug: string;
+}
+
+export interface Product {
+  id: string;
+  seller_id: string;
+  category_id: string | null;
+  name: string;
+  slug: string;
+  description: string;
+  price: number;
+  compare_at_price: number | null;
+  stock: number;
+  status: ProductStatus;
+  created_at: string;
+  sellers?: Pick<Seller, "id" | "store_name" | "slug"> | null;
+  product_categories?: Pick<MarketplaceCategory, "id" | "name" | "slug"> | null;
+  product_images?: ProductImage[];
+}
+
+export interface ProductImage {
+  id: string;
+  product_id: string;
+  url: string;
+  position: number;
+}
+
+export interface CartItem {
+  id: string;
+  user_id: string;
+  product_id: string;
+  quantity: number;
+  created_at: string;
+  products?: Product | null;
+}
+
+export interface Coupon {
+  id: string;
+  seller_id: string | null;
+  code: string;
+  discount_type: DiscountType;
+  discount_value: number;
+  max_uses: number | null;
+  used_count: number;
+  expires_at: string | null;
+  active: boolean;
+  created_at: string;
+}
+
+export interface ShippingAddress {
+  name: string;
+  phone: string;
+  street: string;
+  number: string;
+  complement?: string;
+  neighborhood: string;
+  city: string;
+  state: string;
+  zip: string;
+}
+
+export interface Order {
+  id: string;
+  buyer_id: string;
+  status: OrderStatus;
+  subtotal: number;
+  discount: number;
+  shipping_cost: number;
+  total: number;
+  coupon_id: string | null;
+  shipping_address: ShippingAddress;
+  payment_provider: PaymentProvider | null;
+  payment_status: string;
+  created_at: string;
+}
+
+export interface OrderItem {
+  id: string;
+  order_id: string;
+  product_id: string | null;
+  seller_id: string;
+  product_name: string;
+  unit_price: number;
+  quantity: number;
+  subtotal: number;
+  orders?: Pick<Order, "id" | "status" | "created_at"> | null;
+}

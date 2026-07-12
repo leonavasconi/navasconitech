@@ -14,7 +14,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.contact": "Contato",
 
     "home.title": "Olá, eu sou o Leo",
-    "home.subtitle": "Desenvolvedor Full Stack &amp; Analista de Segurança da Informação",
+    "home.subtitle": "Desenvolvedor Full Stack & Analista de Segurança da Informação",
     "home.description":
       "Desenvolvedor Full Stack e Analista de Segurança da Informação, com experiência em aplicações web, automação corporativa, inteligência artificial e cibersegurança.",
     "home.contact": "Fale Comigo",
@@ -39,16 +39,16 @@ const translations: Record<Lang, Record<string, string>> = {
     "skills.backend.subtitle": "Mais de 3 anos",
     "skills.frontend.title": "Desenvolvimento Frontend",
     "skills.frontend.subtitle": "Mais de 3 anos",
-    "skills.data.title": "Banco de Dados &amp; Cloud",
+    "skills.data.title": "Banco de Dados & Cloud",
     "skills.data.subtitle": "Mais de 2 anos",
     "skills.security.title": "Segurança da Informação",
     "skills.security.subtitle": "Mais de 1 ano",
     "skills.security.item1": "Cibersegurança",
     "skills.security.item2": "Gestão de Acessos (IAM)",
-    "skills.security.item3": "Compliance &amp; OEA",
+    "skills.security.item3": "Compliance & OEA",
     "skills.security.item4": "Proteção de Dados (LGPD)",
     "skills.security.item5": "Gestão de Riscos",
-    "skills.automation.title": "Automação &amp; Produtividade",
+    "skills.automation.title": "Automação & Produtividade",
     "skills.automation.subtitle": "Mais de 3 anos",
 
     "qualification.title": "Qualificação",
@@ -86,7 +86,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Aplicativo completo de finanças pessoais: contas e cartões, lançamentos, orçamento mensal por categoria, contas recorrentes e metas de economia.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
-    "portfolio.marketplace.title": "Marketplace",
+    "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrinho, checkout, cupons, pedidos, painel administrativo, frete e pagamentos (Mercado Pago, Stripe, Pix).<br/>Ferramentas: Next.js, Supabase, TypeScript.",
 
@@ -126,7 +126,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.contact": "Contact",
 
     "home.title": "Hi, I'm Leo",
-    "home.subtitle": "Full Stack Developer &amp; Information Security Analyst",
+    "home.subtitle": "Full Stack Developer & Information Security Analyst",
     "home.description":
       "Full Stack Developer and Information Security Analyst, experienced in web applications, corporate automation, artificial intelligence and cybersecurity.",
     "home.contact": "Contact Me",
@@ -151,16 +151,16 @@ const translations: Record<Lang, Record<string, string>> = {
     "skills.backend.subtitle": "More than 3 years",
     "skills.frontend.title": "Frontend Development",
     "skills.frontend.subtitle": "More than 3 years",
-    "skills.data.title": "Databases &amp; Cloud",
+    "skills.data.title": "Databases & Cloud",
     "skills.data.subtitle": "More than 2 years",
     "skills.security.title": "Information Security",
     "skills.security.subtitle": "More than 1 year",
     "skills.security.item1": "Cybersecurity",
     "skills.security.item2": "Access Management (IAM)",
-    "skills.security.item3": "Compliance &amp; OEA",
+    "skills.security.item3": "Compliance & OEA",
     "skills.security.item4": "Data Protection (LGPD)",
     "skills.security.item5": "Risk Management",
-    "skills.automation.title": "Automation &amp; Productivity",
+    "skills.automation.title": "Automation & Productivity",
     "skills.automation.subtitle": "More than 3 years",
 
     "qualification.title": "Qualification",
@@ -173,7 +173,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.edu4.title": "Full Stack Development",
     "qualification.work1.title": "IT Intern",
     "qualification.work1.subtitle": "Logic Minds - Brazil",
-    "qualification.work2.title": "IT Intern | Automation &amp; Development",
+    "qualification.work2.title": "IT Intern | Automation & Development",
     "qualification.work2.subtitle": "LF Auditoria e Consultoria - Brazil",
     "qualification.work3.title": "Information Security Analyst",
     "qualification.work3.subtitle": "LF Auditoria e Consultoria - Brazil",
@@ -198,7 +198,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Complete personal finance app: accounts and cards, transactions, monthly budget per category, recurring bills and savings goals.<br/>Tools: Next.js, Supabase, TypeScript.",
-    "portfolio.marketplace.title": "Marketplace",
+    "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Full multi-vendor marketplace: cart, checkout, coupons, orders, admin panel, shipping and payments (Mercado Pago, Stripe, Pix).<br/>Tools: Next.js, Supabase, TypeScript.",
 
@@ -263,16 +263,16 @@ const translations: Record<Lang, Record<string, string>> = {
     "skills.backend.subtitle": "Más de 3 años",
     "skills.frontend.title": "Desarrollo Frontend",
     "skills.frontend.subtitle": "Más de 3 años",
-    "skills.data.title": "Bases de Datos &amp; Nube",
+    "skills.data.title": "Bases de Datos & Nube",
     "skills.data.subtitle": "Más de 2 años",
     "skills.security.title": "Seguridad de la Información",
     "skills.security.subtitle": "Más de 1 año",
     "skills.security.item1": "Ciberseguridad",
     "skills.security.item2": "Gestión de Accesos (IAM)",
-    "skills.security.item3": "Cumplimiento &amp; OEA",
+    "skills.security.item3": "Cumplimiento & OEA",
     "skills.security.item4": "Protección de Datos (LGPD)",
     "skills.security.item5": "Gestión de Riesgos",
-    "skills.automation.title": "Automatización &amp; Productividad",
+    "skills.automation.title": "Automatización & Productividad",
     "skills.automation.subtitle": "Más de 3 años",
 
     "qualification.title": "Calificación",
@@ -310,7 +310,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.financas.title": "Monetix",
     "portfolio.financas.description":
       "Aplicación completa de finanzas personales: cuentas y tarjetas, movimientos, presupuesto mensual por categoría, gastos recurrentes y metas de ahorro.<br/>Herramientas: Next.js, Supabase, TypeScript.",
-    "portfolio.marketplace.title": "Marketplace",
+    "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrito, checkout, cupones, pedidos, panel administrativo, envíos y pagos (Mercado Pago, Stripe, Pix).<br/>Herramientas: Next.js, Supabase, TypeScript.",
 
