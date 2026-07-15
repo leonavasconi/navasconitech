@@ -115,56 +115,51 @@ export function Projects() {
   const goTo = (index: number) => setActive((index + slides.length) % slides.length);
 
   return (
-    <section className="nv-portfolio nv-section" id="portfolio">
-      <h2 className="nv-section__title">{t("portfolio.title")}</h2>
-      <span className="nv-section__subtitle">{t("portfolio.subtitle")}</span>
+    <div className="nv-portfolio__container nv-container">
+      <div className="nv-portfolio__content nv-grid">
+        {(() => {
+          const slide = slides[active];
+          return (
+            <>
+              <img
+                src={slide.img}
+                alt={slide.title}
+                className="nv-portfolio__img"
+                onClick={slide.imgOnClick}
+                style={slide.imgOnClick ? { cursor: "pointer" } : undefined}
+              />
 
-      <div className="nv-portfolio__container nv-container">
-        <div className="nv-portfolio__content nv-grid">
-          {(() => {
-            const slide = slides[active];
-            return (
-              <>
-                <img
-                  src={slide.img}
-                  alt={slide.title}
-                  className="nv-portfolio__img"
-                  onClick={slide.imgOnClick}
-                  style={slide.imgOnClick ? { cursor: "pointer" } : undefined}
+              <div className="nv-portfolio__data">
+                <h3 className="nv-portfolio__title">{slide.title}</h3>
+                <p
+                  className="nv-portfolio__description"
+                  dangerouslySetInnerHTML={{ __html: slide.description }}
                 />
+                {slide.action}
+              </div>
+            </>
+          );
+        })()}
+      </div>
 
-                <div className="nv-portfolio__data">
-                  <h3 className="nv-portfolio__title">{slide.title}</h3>
-                  <p
-                    className="nv-portfolio__description"
-                    dangerouslySetInnerHTML={{ __html: slide.description }}
-                  />
-                  {slide.action}
-                </div>
-              </>
-            );
-          })()}
-        </div>
+      <div className="nv-swiper-button-next" onClick={() => goTo(active + 1)}>
+        <i className="uil uil-angle-right-b nv-swiper-portfolio-icon"></i>
+      </div>
+      <div className="nv-swiper-button-prev" onClick={() => goTo(active - 1)}>
+        <i className="uil uil-angle-left-b nv-swiper-portfolio-icon"></i>
+      </div>
 
-        <div className="nv-swiper-button-next" onClick={() => goTo(active + 1)}>
-          <i className="uil uil-angle-right-b nv-swiper-portfolio-icon"></i>
-        </div>
-        <div className="nv-swiper-button-prev" onClick={() => goTo(active - 1)}>
-          <i className="uil uil-angle-left-b nv-swiper-portfolio-icon"></i>
-        </div>
-
-        <div className="nv-swiper-container-horizontal">
-          <div className="nv-swiper-pagination-bullets">
-            {slides.map((slide, i) => (
-              <span
-                key={slide.key}
-                className={`nv-swiper-pagination-bullet${i === active ? " nv-swiper-pagination-bullet-active" : ""}`}
-                onClick={() => goTo(i)}
-              ></span>
-            ))}
-          </div>
+      <div className="nv-swiper-container-horizontal">
+        <div className="nv-swiper-pagination-bullets">
+          {slides.map((slide, i) => (
+            <span
+              key={slide.key}
+              className={`nv-swiper-pagination-bullet${i === active ? " nv-swiper-pagination-bullet-active" : ""}`}
+              onClick={() => goTo(i)}
+            ></span>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

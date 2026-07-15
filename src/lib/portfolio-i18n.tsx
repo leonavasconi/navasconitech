@@ -10,7 +10,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.about": "Sobre",
     "nav.skills": "Habilidades",
     "nav.portfolio": "Portfólio",
-    "nav.activities": "Atividades",
+    "nav.activities": "Conquistas",
     "nav.contact": "Contato",
 
     "home.title": "Olá, eu sou o Leo",
@@ -58,7 +58,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.edu1.title": "Inglês Avançado",
     "qualification.edu2.title": "Técnico em Informática",
     "qualification.edu3.title": "Bacharelado em Sistemas de Informação",
-    "qualification.edu4.title": "Desenvolvimento Full Stack",
     "qualification.work1.title": "Estagiário de TI",
     "qualification.work1.subtitle": "Logic Minds - Brasil",
     "qualification.work2.title": "Estagiário de TI | Automação e Desenvolvimento",
@@ -68,7 +67,8 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.work3.dates": "07/2025 - Atual",
 
     "portfolio.title": "Portfólio",
-    "portfolio.subtitle": "Trabalhos recentes",
+    "portfolio.subtitle": "Escolha a área que quer conhecer",
+    "portfolio.areaDev": "Desenvolvimento",
     "portfolio.arhus.description":
       "Sistema para registro e visualização de furtos e roubos através de um mapa interativo. TCC premiado com destaque regional e apoio institucional do CONSEG e da ACE.<br/>Ferramentas: HTML, CSS, PHP, JS e Google Maps API.",
     "portfolio.seeProject": "Ver Projeto",
@@ -90,7 +90,19 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrinho, checkout, cupons, pedidos, painel administrativo, frete e pagamentos (Mercado Pago, Stripe, Pix).<br/>Ferramentas: Next.js, Supabase, TypeScript.",
 
-    "activities.title": "Atividades Complementares",
+    "infosec.title": "Segurança da Informação",
+    "infosec.presentation":
+      "Atuo em projetos de Segurança da Informação, auditoria e conformidade, apoiando empresas nacionais e multinacionais na avaliação, implementação e melhoria de controles internos. Minha experiência envolve testes de controles, análise de riscos, revisão de políticas e procedimentos, identificação de não conformidades e apoio em processos de certificação, revalidação e monitoramento de programas regulatórios.",
+    "infosec.services.title": "Serviços e atividades",
+    "infosec.services.item1": "Auditorias de Segurança da Informação e testes de efetividade de controles",
+    "infosec.services.item2": "Análise de riscos e identificação de vulnerabilidades",
+    "infosec.services.item3": "Implementação e aprimoramento de controles, políticas e procedimentos internos",
+    "infosec.services.item4": "Gestão de acessos, backups e proteção de dados",
+    "infosec.services.item5": "Conscientização e treinamentos de segurança",
+    "infosec.services.item6": "Apoio em certificações, revalidações e auditorias regulatórias",
+    "infosec.companies.title": "Empresas atendidas",
+
+    "activities.title": "Conquistas e Reconhecimentos",
     "activities.subtitle": "Além da sala de aula",
     "activities.watchVideo": "Assistir vídeo",
     "activities.hackathon.title": "1º Lugar — Hackathon Zoho Brasil",
@@ -113,7 +125,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "footer.subtitle": "Desenvolvedor Full Stack",
     "footer.portfolio": "Portfólio",
-    "footer.activities": "Atividades",
+    "footer.activities": "Conquistas",
     "footer.contact": "Contato",
     "footer.copy": " Copyright © 2026 Leonardo Navasconi. Todos os direitos reservados.",
   },
@@ -122,7 +134,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.about": "About",
     "nav.skills": "Skills",
     "nav.portfolio": "Portfolio",
-    "nav.activities": "Activities",
+    "nav.activities": "Achievements",
     "nav.contact": "Contact",
 
     "home.title": "Hi, I'm Leo",
@@ -170,7 +182,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.edu1.title": "Advanced English",
     "qualification.edu2.title": "Computer Technician",
     "qualification.edu3.title": "B.A. in Information Systems",
-    "qualification.edu4.title": "Full Stack Development",
     "qualification.work1.title": "IT Intern",
     "qualification.work1.subtitle": "Logic Minds - Brazil",
     "qualification.work2.title": "IT Intern | Automation & Development",
@@ -180,7 +191,8 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.work3.dates": "07/2025 - Present",
 
     "portfolio.title": "Portfolio",
-    "portfolio.subtitle": "Most recent work",
+    "portfolio.subtitle": "Choose the area you'd like to see",
+    "portfolio.areaDev": "Development",
     "portfolio.arhus.description":
       "System to report and visualize thefts and robberies through an interactive map. Award-winning senior thesis, recognized as a regional highlight with institutional support from CONSEG and ACE.<br/>Tools: HTML, CSS, PHP, JS and Google Maps API.",
     "portfolio.seeProject": "See Project",
@@ -202,7 +214,19 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.marketplace.description":
       "Full multi-vendor marketplace: cart, checkout, coupons, orders, admin panel, shipping and payments (Mercado Pago, Stripe, Pix).<br/>Tools: Next.js, Supabase, TypeScript.",
 
-    "activities.title": "Complementary Activities",
+    "infosec.title": "Information Security",
+    "infosec.presentation":
+      "I work on Information Security, audit and compliance projects, supporting national and multinational companies in assessing, implementing and improving internal controls. My experience covers control testing, risk analysis, policy and procedure review, non-conformity identification, and support for certification, revalidation and regulatory program monitoring processes.",
+    "infosec.services.title": "Services & Activities",
+    "infosec.services.item1": "Information Security audits and control effectiveness testing",
+    "infosec.services.item2": "Risk analysis and vulnerability identification",
+    "infosec.services.item3": "Implementation and improvement of internal controls, policies and procedures",
+    "infosec.services.item4": "Access management, backup and data protection",
+    "infosec.services.item5": "Security awareness and training",
+    "infosec.services.item6": "Support for certifications, revalidations and regulatory audits",
+    "infosec.companies.title": "Companies Served",
+
+    "activities.title": "Achievements & Recognition",
     "activities.subtitle": "Beyond the classroom",
     "activities.watchVideo": "Watch video",
     "activities.hackathon.title": "1st Place — Zoho Brazil Hackathon",
@@ -225,7 +249,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "footer.subtitle": "Full Stack Developer",
     "footer.portfolio": "Portfolio",
-    "footer.activities": "Activities",
+    "footer.activities": "Achievements",
     "footer.contact": "Contact",
     "footer.copy": " Copyright © 2026 Leonardo Navasconi. All Rights Reserved.",
   },
@@ -234,7 +258,7 @@ const translations: Record<Lang, Record<string, string>> = {
     "nav.about": "Sobre mí",
     "nav.skills": "Habilidades",
     "nav.portfolio": "Portafolio",
-    "nav.activities": "Actividades",
+    "nav.activities": "Logros",
     "nav.contact": "Contacto",
 
     "home.title": "Hola, soy Leo",
@@ -282,7 +306,6 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.edu1.title": "Inglés Avanzado",
     "qualification.edu2.title": "Técnico en Informática",
     "qualification.edu3.title": "Licenciatura en Sistemas de Información",
-    "qualification.edu4.title": "Desarrollo Full Stack",
     "qualification.work1.title": "Pasante de TI",
     "qualification.work1.subtitle": "Logic Minds - Brasil",
     "qualification.work2.title": "Pasante de TI | Automatización y Desarrollo",
@@ -292,7 +315,8 @@ const translations: Record<Lang, Record<string, string>> = {
     "qualification.work3.dates": "07/2025 - Actualidad",
 
     "portfolio.title": "Portafolio",
-    "portfolio.subtitle": "Trabajos recientes",
+    "portfolio.subtitle": "Elige el área que quieras conocer",
+    "portfolio.areaDev": "Desarrollo",
     "portfolio.arhus.description":
       "Sistema para registrar y visualizar hurtos y robos mediante un mapa interactivo. Proyecto de fin de carrera premiado, reconocido como destacado regional con apoyo institucional de CONSEG y ACE.<br/>Herramientas: HTML, CSS, PHP, JS y Google Maps API.",
     "portfolio.seeProject": "Ver Proyecto",
@@ -314,7 +338,19 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrito, checkout, cupones, pedidos, panel administrativo, envíos y pagos (Mercado Pago, Stripe, Pix).<br/>Herramientas: Next.js, Supabase, TypeScript.",
 
-    "activities.title": "Actividades Complementarias",
+    "infosec.title": "Seguridad de la Información",
+    "infosec.presentation":
+      "Trabajo en proyectos de Seguridad de la Información, auditoría y cumplimiento, apoyando a empresas nacionales y multinacionales en la evaluación, implementación y mejora de controles internos. Mi experiencia abarca pruebas de controles, análisis de riesgos, revisión de políticas y procedimientos, identificación de no conformidades y apoyo en procesos de certificación, revalidación y monitoreo de programas regulatorios.",
+    "infosec.services.title": "Servicios y actividades",
+    "infosec.services.item1": "Auditorías de Seguridad de la Información y pruebas de efectividad de controles",
+    "infosec.services.item2": "Análisis de riesgos e identificación de vulnerabilidades",
+    "infosec.services.item3": "Implementación y mejora de controles, políticas y procedimientos internos",
+    "infosec.services.item4": "Gestión de accesos, copias de seguridad y protección de datos",
+    "infosec.services.item5": "Concientización y capacitación en seguridad",
+    "infosec.services.item6": "Apoyo en certificaciones, revalidaciones y auditorías regulatorias",
+    "infosec.companies.title": "Empresas atendidas",
+
+    "activities.title": "Logros y Reconocimientos",
     "activities.subtitle": "Más allá del aula",
     "activities.watchVideo": "Ver video",
     "activities.hackathon.title": "1er Lugar — Hackathon de Zoho Brasil",
@@ -337,7 +373,7 @@ const translations: Record<Lang, Record<string, string>> = {
 
     "footer.subtitle": "Desarrollador Full Stack",
     "footer.portfolio": "Portafolio",
-    "footer.activities": "Actividades",
+    "footer.activities": "Logros",
     "footer.contact": "Contacto",
     "footer.copy": " Copyright © 2026 Leonardo Navasconi. Todos los derechos reservados.",
   },

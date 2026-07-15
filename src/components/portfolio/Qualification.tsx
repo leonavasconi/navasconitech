@@ -15,7 +15,6 @@ const EDUCATION: QualificationItem[] = [
   { titleKey: "qualification.edu1.title", subtitle: "Fundação Richard Hugh Fisk", dates: "2011 - 2022" },
   { titleKey: "qualification.edu2.title", subtitle: "Etec de Praia Grande", dates: "2020 - 2022" },
   { titleKey: "qualification.edu3.title", subtitle: "Universidade Santa Cecília", dates: "2023 - 2026" },
-  { titleKey: "qualification.edu4.title", subtitle: "Alura", dates: "2023 - 2024" },
 ];
 
 const WORK: QualificationItem[] = [
