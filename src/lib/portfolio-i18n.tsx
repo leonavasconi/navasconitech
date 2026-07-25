@@ -83,12 +83,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.jogos.title": "Jogos Universitários — UNISANTA",
     "portfolio.jogos.description":
       "Plataforma de acompanhamento dos Jogos Universitários da UNISANTA, aprovada e implementada pela Diretoria da universidade: agenda de partidas, acompanhamento ao vivo, classificação, destaques e estatísticas.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Monetix",
-    "portfolio.financas.description":
-      "Aplicativo completo de finanças pessoais: contas e cartões, lançamentos, orçamento mensal por categoria, contas recorrentes e metas de economia.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrinho, checkout, cupons, pedidos, painel administrativo, frete e pagamentos (Mercado Pago, Stripe, Pix).<br/>Ferramentas: Next.js, Supabase, TypeScript.",
+    "portfolio.navahub.title": "NavaHub",
+    "portfolio.navahub.description":
+      "Plataforma de gestão empresarial: controle de estoque, vendas com cálculo de lucro e margem em tempo real e fluxo de caixa, tudo centralizado em um painel só.<br/>Ferramentas: Next.js, Supabase, TypeScript.",
 
     "infosec.title": "Segurança da Informação",
     "infosec.presentation":
@@ -207,12 +207,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.jogos.title": "University Games — UNISANTA",
     "portfolio.jogos.description":
       "Tracking platform for UNISANTA's University Games, approved and implemented by the university's board: match schedule, live tracking, standings, highlights and stats.<br/>Tools: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Monetix",
-    "portfolio.financas.description":
-      "Complete personal finance app: accounts and cards, transactions, monthly budget per category, recurring bills and savings goals.<br/>Tools: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Full multi-vendor marketplace: cart, checkout, coupons, orders, admin panel, shipping and payments (Mercado Pago, Stripe, Pix).<br/>Tools: Next.js, Supabase, TypeScript.",
+    "portfolio.navahub.title": "NavaHub",
+    "portfolio.navahub.description":
+      "Business management platform: inventory control, sales with real-time profit and margin calculation, and cash flow, all centralized in a single dashboard.<br/>Tools: Next.js, Supabase, TypeScript.",
 
     "infosec.title": "Information Security",
     "infosec.presentation":
@@ -331,12 +331,12 @@ const translations: Record<Lang, Record<string, string>> = {
     "portfolio.jogos.title": "Juegos Universitarios — UNISANTA",
     "portfolio.jogos.description":
       "Plataforma de seguimiento de los Juegos Universitarios de la UNISANTA, aprobada e implementada por la Dirección de la universidad: calendario de partidos, seguimiento en vivo, clasificación, destacados y estadísticas.<br/>Herramientas: Next.js, Supabase, TypeScript.",
-    "portfolio.financas.title": "Monetix",
-    "portfolio.financas.description":
-      "Aplicación completa de finanzas personales: cuentas y tarjetas, movimientos, presupuesto mensual por categoría, gastos recurrentes y metas de ahorro.<br/>Herramientas: Next.js, Supabase, TypeScript.",
     "portfolio.marketplace.title": "Vitrine",
     "portfolio.marketplace.description":
       "Marketplace multi-vendedor completo: carrito, checkout, cupones, pedidos, panel administrativo, envíos y pagos (Mercado Pago, Stripe, Pix).<br/>Herramientas: Next.js, Supabase, TypeScript.",
+    "portfolio.navahub.title": "NavaHub",
+    "portfolio.navahub.description":
+      "Plataforma de gestión empresarial: control de inventario, ventas con cálculo de ganancia y margen en tiempo real, y flujo de caja, todo centralizado en un solo panel.<br/>Herramientas: Next.js, Supabase, TypeScript.",
 
     "infosec.title": "Seguridad de la Información",
     "infosec.presentation":

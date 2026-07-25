@@ -81,18 +81,18 @@ export function Projects() {
       ),
     },
     {
-      key: "financas",
-      img: "/assets/img/portfolio/monetix.png",
-      title: t("portfolio.financas.title"),
-      description: t("portfolio.financas.description"),
+      key: "navahub",
+      img: "/assets/img/portfolio/navahub.png",
+      title: t("portfolio.navahub.title"),
+      description: t("portfolio.navahub.description"),
       action: (
-        <Link
-          href="/financas"
+        <a
+          href="https://navahub.vercel.app/"
           target="_blank"
           className="nv-button nv-button--flex nv-button--small nv-portfolio__button"
         >
           {t("portfolio.seeProject")} <i className="uil uil-arrow-right nv-button__icon"></i>
-        </Link>
+        </a>
       ),
     },
     {
